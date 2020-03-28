@@ -1,0 +1,106 @@
+<html>
+
+   <head>
+      <title>Student Registration Form</title>
+      <style type="text/css">
+      	tr:nth-child(even) 
+      	{
+  			background-color: #f2f2f2;
+		}
+		tr:nth-child(odd) 
+      	{
+  			background-color: #ffffff;
+		}
+      </style>
+   </head>
+
+   <body bgcolor="d7fffd">
+      <h2 align="center" style="color: blue">National Workshop on Web Technology</h2>
+      <form method="post" action="index.php">
+         <table align="center" cellpadding = "10" border="1">
+            <tr>
+               <td>FIRST NAME</td>
+               <td><input type="text" name="First_Name" maxlength="30" required/>
+                  (max 30 characters a-z and A-Z)
+               </td>
+            </tr>
+            <tr>
+               <td>LAST NAME</td>
+               <td><input type="text" name="Last_Name" maxlength="30" required/>
+                  (max 30 characters a-z and A-Z)
+               </td>
+            </tr>
+            <tr>
+               <td>Student or Faculty or Professional or CompanyRepresentatives</td>
+               <td>
+                  Student <input type="radio" id="Student" name="Position" value="Student" required>
+                  Faculty <input type="radio" id="Faculty" name="Position" value="Faculty" required>
+                  Professional <input type="radio" id="Professional" name="Position" value="Professional" required>
+                  CompanyRepresentatives <input type="radio" id="CompanyRepresentatives" name="Position" value="CompanyRepresentatives" required>
+               </td>
+            </tr>
+            <tr>
+               <td>EMAIL ID</td>
+               <td><input type="Email" name="Email_Id" maxlength="30" required /></td>
+            </tr>
+            <tr>
+               <td>MOBILE NUMBER</td>
+               <td>
+                  <input type="number" name="Mobile_Number" maxlength="12" minlength="12"  required />
+                  (12 digit number with CountryCode ex. 916353905148)
+               </td>
+            </tr>
+            <tr>
+               <td>GENDER</td>
+               <td>
+                  Male <input type="radio" name="Gender" value="M" required />
+                  Female <input type="radio" name="Gender" value="F" required />
+                  Others <input type="radio" name="Gender" value="O" required />
+               </td>
+            </tr>
+            <tr>
+               <td>INSTITUTE/ORGANISATION NAME</td>
+               <td><input type="text" name="Institute_Organisation" maxlength="30" required/>
+                  (max 30 characters a-z and A-Z)
+               </td>
+            </tr>
+            <tr>
+               <td>CITY</td>
+               <td><input type="text" name="City" maxlength="30" required/>
+                  (max 30 characters a-z and A-Z)
+               </td>
+            </tr>
+            <tr>
+               <td>PIN CODE</td>
+               <td><input type="text" name="Pin_Code" maxlength="6" minlength="6" required />
+                  (6 digit number)
+               </td>
+            </tr>
+            <tr>
+               <td>STATE</td>
+               <td><input type="text" name="State" maxlength="30" required />
+                  (max 30 characters a-z and A-Z)
+               </td>
+            </tr>
+            <tr>
+               <td>COUNTRY</td>
+               <td>
+                  <select name="Country">
+                     <option selected  value="India" required>India</option>
+                     <option value="Nepal" required>Nepal</option>
+                     <option value="Pakistan" required>Pakistan</option>
+                     <option value="China" required>China</option>
+                  </select>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2" align="center">
+                  <input type="submit" value="Submit">
+                  <input type="reset" value="Reset">
+               </td>
+            </tr>
+         </table>
+      </form>
+   </body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <meta charset="utf-8">
+      <title>Information form</title>
+  </head>
+  <body>
+    <form>
+    	<table>
+    		<tr>
+    			<td><b>First name : </b></td>
+    			<td><input type="text" name="name" id="name" onblur="capital()"><br></td>
+    		</tr>
+    		<tr>
+    			<td><b>Middel name : </b></td>
+    			<td><input type="text" name="name"><br></td>
+    		</tr>
+        <tr>
+    			<td><b>Last name : </b></td>
+    			<td><input type="text" name="name"><br></td>
+    		</tr>
+    		<tr>
+    			<td><b>Mobile no. : </b></td>
+    			<td><input type="number" name="number" value="number"><br></td>
+    		</tr>
+        <tr>
+    			<td><b>Date Of Birth : </b></td>
+    			<td><input type="date" name="date"><br></td>
+    		</tr>
+        <tr>
+    			<td><b>Gender : </b></td>
+    			<td>Male &nbsp;&nbsp;<input type="radio" name="Gender" value="Male"><br>
+          Female<input type="radio" name="Gender" value="Female"><br>
+          Other &nbsp;&nbsp;<input type="radio" name="Gender" value="Other"><br></td>
+    		</tr>
+        <tr>
+    			<td><b>Hobby : </b></td>
+    			<td>Dancing &nbsp;&nbsp;&nbsp;<input type="checkbox" name="hobby" value="dancing"><br>
+          Singing &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="hobby" value="singing"><br>
+          Drawing &nbsp;&nbsp;&nbsp;<input type="checkbox" name="hobby" value="drawing"><br>
+          Swimming <input type="checkbox" name="hobby" value="swimming"><br></td>
+    		</tr>
+        <tr>
+          <td><b>Address :</b></td>
+          <td><textarea name="Address" rows="8" cols="80"></textarea><br></td>
+        </tr>
+    		<tr>
+    			<td><b>City : </b></td>
+    			<td><select class="City" name="City">
+            <option value="Surat" selected>Surat</option>
+            <option value="Anand">Anand</option>
+            <option value="Jamnagar">Jamnagar</option>
+            <option value="Rajkot">Rajkot</option>
+            <option value="Nadiad">Nadiad</option>
+            <option value="Bhavnagar">Bhavnagar</option>
+            <option value="Ahemdabad">Ahemdabad</option>
+            <option value="Vadodara">Vadodara</option>
+          </select></td>
+    		</tr>
+    		<tr>
+    			<td colspan="2" style="text-align:center"><button>Submit</button></td>
+    		</tr>
+    	</table>
+    </form>
+    <script>
+      function capital() {
+        var x = document.getElementById("name");
+        x.value = x.value.toUpperCase();
+      }
+    </script>
+  </body>
+</html>
